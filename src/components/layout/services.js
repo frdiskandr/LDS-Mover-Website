@@ -1,70 +1,59 @@
 "use client";
-import ServiceCard from "~/components/template/serviceCard";
-import { Move, Truck, Warehouse, PackageCheck, Building2 } from "lucide-react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
-
-const services = [
-  {
-    title: "Relocation Services",
-    description: "Layanan pindahan rumah, kantor, dan internasional.",
-    icon: <Move size={32} />,
-  },
-  {
-    title: "Logistics Services",
-    description: "Distribusi & transportasi barang ke seluruh Indonesia.",
-    icon: <Truck size={32} />,
-  },
-  {
-    title: "Storage Solutions",
-    description: "Penyimpanan barang aman dengan fleksibilitas waktu.",
-    icon: <Warehouse size={32} />,
-  },
-  {
-    title: "Packing Services",
-    description: "Pengepakan profesional untuk keamanan barang Anda.",
-    icon: <PackageCheck size={32} />,
-  },
-  {
-    title: "Corporate Moving",
-    description: "Pindahan untuk perusahaan, kantor, dan kedutaan.",
-    icon: <Building2 size={32} />,
-  },
-];
+import { Globe, Home, Building2, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 export default function Services() {
-  return (
-    <section className="py-12 bg-gray-100">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-blue-600 mb-5">Our Services</h2>
-        
-              {/* Grid Layout for Desktop */}
-              {/* md:grid md:grid-cols-3 gap-8 mt-8 */}
-        <div className="hidden md:flex flex-wrap justify-center">
-          {services.map((service, index) => (
-            <ServiceCard key={index} {...service} />
-          ))}
-        </div>
+    const services = [
+        {
+            icon: <Globe size={40} />,
+            title: "International Moving Service",
+        desc: "Layanan pindahan antar negara dengan aman dan profesional.",
+            link:"/services/international-moving-service"
+        },
+        {
+            icon: <Home size={40} />,
+            title: "Domestics Moves",
+          desc: "Jasa pindahan rumah dan apartemen dalam negeri dengan efisiensi tinggi.",
+             link:"/services/domesticMove"
+        },
+        {
+            icon: <Building2 size={40} />,
+            title: "Office Moving",
+          desc: "Pindahan kantor yang cepat dan terorganisir untuk bisnis Anda.",
+             link:"/services/officeMoving"
+        },
+        {
+            icon: <ShieldCheck size={40} />,
+            title: "Safe Handling",
+          desc: "Penanganan barang dengan perlindungan ekstra untuk keamanan maksimal.",
+             link:"/services/saveHandling"
+        },
+    ];
 
-        {/* Swiper Carousel for Mobile */}
-        <div className="md:hidden mt-8">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={20}
-            autoplay={{ delay: 1500 }}
-            loop={true}
-            modules={[Autoplay]}
-            className="w-full max-w-lg mx-auto"
-          >
-            {services.map((service, index) => (
-              <SwiperSlide key={index}>
-                <ServiceCard {...service} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </div>
-    </section>
-  );
+    return (
+        <section className="py-12 px-6 bg-gray-100">
+            <div className="container mx-auto text-center">
+                <h2 className="text-3xl font-bold text-blue-600">
+                    Our Services
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                    {services.map((service, index) => (
+                        <Link
+                            href={service.link}
+                            key={index}
+                            className="bg-white p-6 rounded-lg shadow-lg text-center transition-transform hover:scale-105"
+                        >
+                            <div className="text-blue-500 mb-3">
+                                {service.icon}
+                            </div>
+                            <h3 className="text-lg font-semibold">
+                                {service.title}
+                            </h3>
+                            <p className="text-gray-600 mt-2">{service.desc}</p>
+                        </Link>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 }

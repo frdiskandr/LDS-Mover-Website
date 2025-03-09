@@ -3,12 +3,12 @@ import Footer from "~/components/footer";
 import Services from "~/components/layout/services";
 import Testimonials from "~/components/layout/testimoni";
 import Navbar from "~/components/navbar";
-import ClientLogoSlider from "~/components/template/sliderLogoClient";
+import ClientLogoSlider from "~/components/layout/sliderLogoClient";
 
 export default function Home() {
     return (
         <div className="bg-primary">
-            <Navbar />
+           
             <main className="relative">
                 <section id="home">
                 <header>
@@ -30,12 +30,12 @@ export default function Home() {
                 </section>
                 <ClientLogoSlider />
                 <section id="our-services" className="relative bg">
-                    <div className="container mx-auto w-full  bg-[#F4F4F4] p-2 rounded-2xl shadow-2xl text-black">
+                    <div className="container mx-auto w-full  bg-[#F4F4F4] p-2 rounded-2xl shadow-md text-black">
                         <Services />
                     </div>
                 </section>
                 <section id="our-services" className="relative bg p-2">
-                    <div className="container mx-auto w-full h-[100vh] bg-[#F4F4F4] p-2 rounded-2xl shadow-2xl text-black pt-10 flex flex-col items-center">
+                    <div className="container mx-auto w-full pb-10 bg-[#F4F4F4] p-2 rounded-2xl shadow-2xl text-black pt-10 flex flex-col items-center">
                         <Testimonials />
                         <a
                             href="#"
@@ -46,8 +46,6 @@ export default function Home() {
                     </div>
                 </section>
             </main>
-
-            <Footer />
         </div>
     );
 }

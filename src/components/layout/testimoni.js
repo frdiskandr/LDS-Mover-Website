@@ -7,41 +7,22 @@ import "swiper/css";
 const testimonials = [
     {
         name: "John Doe",
-        company: "XYZ Corp",
+        company: "BCA Finance",
         message: "Layanan LDS Movers sangat profesional dan tepat waktu!",
-        image: "/clients/john.jpg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREeDNVdj87JBUW5lZzDnyccmqUHdAeQQIWLw&s",
     },
     {
         name: "Jane Smith",
-        company: "ABC Logistics",
+        company: "Pertamina phe onwj ",
         message: "Pengemasan barang sangat rapi dan aman. Highly recommended!",
-        image: "/clients/jane.jpg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRJt1-TDJX1sgF8ii0CgJ6idtIiEd9P-fPXw&s",
     },
     {
         name: "Michael Brown",
-        company: "LMN Enterprises",
+        company: "ACG SCHOOL JAKARTA",
         message:
             "Tim LDS Movers sangat membantu dalam proses relokasi kantor kami.",
-        image: "/clients/michael.jpg",
-    },
-    {
-        name: "John Doe",
-        company: "XYZ Corp",
-        message: "Layanan LDS Movers sangat profesional dan tepat waktu!",
-        image: "/clients/john.jpg",
-    },
-    {
-        name: "Jane Smith",
-        company: "ABC Logistics",
-        message: "Pengemasan barang sangat rapi dan aman. Highly recommended!",
-        image: "/clients/jane.jpg",
-    },
-    {
-        name: "Michael Brown",
-        company: "LMN Enterprises",
-        message:
-            "Tim LDS Movers sangat membantu dalam proses relokasi kantor kami.",
-        image: "/clients/michael.jpg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPlC6o-rJpUv2y6c_q6JGtj7PHwm1Kcap8A&s",
     },
 ];
 

@@ -2,10 +2,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [dropdown, setDropdown] = useState({ services: false, fleet: false });
+    const router = useRouter();
 
     return (
         <nav className="bg-primary shadow-md fixed top-0 left-0 w-full z-50">
@@ -42,12 +44,21 @@ export default function Navbar() {
                     {/* Dropdown Services */}
                     <li className="relative group">
                         <button
-                            onClick={() =>
+                            onMouseEnter={() =>
                                 setDropdown({
                                     ...dropdown,
                                     services: !dropdown.services,
                                 })
                             }
+                            // onMouseLeave={() =>
+                            //     setDropdown({
+                            //         ...dropdown,
+                            //         services: false,
+                            //     })
+                            // }
+                            onClick={() => {
+                                router.push("/services");
+                            }}
                             className="flex items-center hover:text-blue-500 transition"
                         >
                             Services <ChevronDown size={18} className="ml-1" />
@@ -56,26 +67,34 @@ export default function Navbar() {
                             <ul className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden text-gray-900">
                                 <li>
                                     <Link
-                                        href="/services/moving"
+                                        href="/services/international-moving-service"
                                         className="block px-4 py-2 hover:bg-gray-100"
                                     >
-                                        Moving Services
+                                        International moving service
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href="/services/logistics"
+                                        href="/services/domesticMove"
                                         className="block px-4 py-2 hover:bg-gray-100"
                                     >
-                                        Logistics
+                                        Domestics moves
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href="/services/storage"
+                                        href="/services/officeMoving"
                                         className="block px-4 py-2 hover:bg-gray-100"
                                     >
-                                        Storage Solutions
+                                        Office moving
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/services/saveHandling"
+                                        className="block px-4 py-2 hover:bg-gray-100"
+                                    >
+                                        Safe handling
                                     </Link>
                                 </li>
                             </ul>
