@@ -1,8 +1,8 @@
 const { default: Link } = require("next/link")
 
-function LogoLds() {
+function LogoLds({style="text-2xl font-bold"}) {
     return (
-        <Link href="/" className="text-2xl font-bold">
+        <Link href="/" className={style}>
         LDS Movers
         <div className="flex flex-row">
             <div className="bg-red-600 w-1/3 h-2 rounded-l-full  relative left-1"></div>

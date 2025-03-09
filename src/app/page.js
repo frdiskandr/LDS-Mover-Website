@@ -1,32 +1,47 @@
-import Image from "next/image";
-import Footer from "~/components/footer";
 import Services from "~/components/layout/services";
 import Testimonials from "~/components/layout/testimoni";
-import Navbar from "~/components/navbar";
 import ClientLogoSlider from "~/components/layout/sliderLogoClient";
+import Link from "next/link";
+
+export const metadata = {
+    title: "LDS Movers Indonesia | Professional Moving & Logistics Services",
+    description: "LDS Movers Indonesia adalah perusahaan jasa logistik dan relokasi terpercaya. Kami melayani pindahan rumah, kantor, dan pengiriman barang dengan aman dan tepat waktu.",
+    keywords: "LDS Movers, moving service, jasa pindahan, logistic Indonesia, jasa relokasi",
+    openGraph: {
+        title: "LDS Movers Indonesia | Professional Moving & Logistics Services",
+        description: "LDS Movers adalah penyedia layanan pindahan rumah, kantor, dan logistik dengan pengalaman bertahun-tahun.",
+        type: "website",
+        images: [{ url: "/company.webp", width: 1200, height: 630, alt: "LDS Movers Indonesia" }],
+    },
+};
 
 export default function Home() {
     return (
         <div className="bg-primary">
-           
             <main className="relative">
                 <section id="home">
-                <header>
-                    <div className="w-screen h-[40vh] sm:h-[80vh] bg-image-primary relative pt-[80vh] container mx-auto">
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                            <h1 className="text-4xl sm:text-6xl font-bold text-white mb-4 w-2xs sm:w-full">
-                                Welcome to LDS Movers
-                            </h1>
-                            <p className="text-lg sm:text-xl text-white">
-                                {" "}
-                                Your trusted partner for all your moving needs.
-                            </p>
-                            <button className="mt-8 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
-                                Get Started
-                            </button>
+                    <header>
+                        <div className="w-screen h-[40vh] sm:h-[80vh] bg-image-primary relative pt-[80vh] container mx-auto">
+                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                                <h1 className="text-4xl sm:text-6xl font-bold text-white mb-4 w-2xs sm:w-full">
+                                    Welcome to LDS Movers
+                                </h1>
+                                <p className="text-lg sm:text-xl text-white">
+                                    {" "}
+                                    Your trusted partner for all your moving
+                                    needs.
+                                </p>
+                                <div className="mt-8">
+                                    <Link
+                                        href={"/about"}
+                                        className="mt-8 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+                                    >
+                                        Get Started
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </header>
+                    </header>
                 </section>
                 <ClientLogoSlider />
                 <section id="our-services" className="relative bg">

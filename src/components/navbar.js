@@ -42,25 +42,28 @@ export default function Navbar() {
                     </li>
 
                     {/* Dropdown Services */}
-                    <li className="relative group">
+                    <li
+                        className="relative group"
+                        onMouseLeave={() =>
+                            setDropdown({
+                                ...dropdown,
+                                services: false,
+                            })
+                        }
+                        onMouseEnter={() =>
+                            setDropdown({
+                                ...dropdown,
+                                services: !dropdown.services,
+                            })
+                        }
+                    >
                         <button
-                            onMouseEnter={() =>
-                                setDropdown({
-                                    ...dropdown,
-                                    services: !dropdown.services,
-                                })
-                            }
-                            // onMouseLeave={() =>
-                            //     setDropdown({
-                            //         ...dropdown,
-                            //         services: false,
-                            //     })
-                            // }
                             onClick={() => {
                                 router.push("/services");
                             }}
-                            className="flex items-center hover:text-blue-500 transition"
+                            className="flex items-center hover:text-blue-500 transitio relative"
                         >
+                            <div className="absolute w-[50px] h-[50px]"></div>
                             Services <ChevronDown size={18} className="ml-1" />
                         </button>
                         {dropdown.services && (
@@ -102,42 +105,54 @@ export default function Navbar() {
                     </li>
 
                     {/* Dropdown Our Fleet */}
-                    <li className="relative group">
+                    <li
+                        className="relative group"
+                        onMouseLeave={() =>
+                            setDropdown({
+                                ...dropdown,
+                                fleet: false,
+                            })
+                        }
+                        onMouseEnter={() =>
+                            setDropdown({
+                                ...dropdown,
+                                fleet: !dropdown.fleet,
+                            })
+                        }
+                    >
                         <button
-                            onClick={() =>
-                                setDropdown({
-                                    ...dropdown,
-                                    fleet: !dropdown.fleet,
-                                })
-                            }
-                            className="flex items-center hover:text-blue-500 transition"
+                            onClick={() => {
+                                router.push("/fleet");
+                            }}
+                            className="flex items-center hover:text-blue-500 transition relative"
                         >
+                            <div className="absolute w-[50px] h-[50px]"></div>
                             Our Fleet <ChevronDown size={18} className="ml-1" />
                         </button>
                         {dropdown.fleet && (
                             <ul className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden text-gray-900">
                                 <li>
                                     <Link
-                                        href="/fleet/trucks"
+                                        href="/fleet/truckCooler"
                                         className="block px-4 py-2 hover:bg-gray-100"
                                     >
-                                        Trucks
+                                        Truck Cooler/Frezer
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href="/fleet/vans"
+                                        href="/fleet/truckBox"
                                         className="block px-4 py-2 hover:bg-gray-100"
                                     >
-                                        Vans
+                                        Truck Box
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href="/fleet/specialty"
+                                        href="/fleet/truckBak"
                                         className="block px-4 py-2 hover:bg-gray-100"
                                     >
-                                        Specialty Vehicles
+                                        Truck Bak Terbuka
                                     </Link>
                                 </li>
                             </ul>
