@@ -30,7 +30,7 @@ export default function Testimonials() {
     return (
         <section className="py-12 bg-gray-100">
             <div className="container mx-auto px-6">
-                <h2 className="text-3xl font-bold text-center text-blue-600">
+                <h2 className="sm:text-3xl text-2xl font-bold text-center text-blue-600">
                     What Our Clients Say
                 </h2>
 
@@ -42,7 +42,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Swiper Carousel for Mobile */}
-                <div className="md:hidden mt-8">
+                <div className="md:hidden mt-8 w-[80vw] relative">
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={20}
