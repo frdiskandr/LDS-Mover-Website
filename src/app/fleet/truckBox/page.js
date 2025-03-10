@@ -13,7 +13,7 @@ async function getTruckBoxData() {
                 height: "160 cm",
                 volume: "±9 Cbm",
             },
-            image: "/images/cde-box.jpg",
+            image: "https://smbcargo.com/wp-content/uploads/2022/02/117862394_671786906756654_1199854350954024012_n-1024x747.jpg",
         },
         {
             name: "Colt Diesel Double (CDD) Box",
@@ -23,7 +23,7 @@ async function getTruckBoxData() {
                 height: "220 cm",
                 volume: "±24 Cbm",
             },
-            image: "/images/cdd-box.jpg",
+            image: "https://hmslogistik.com/storage/img/vehicles/ss3cRxbQY5aaGM7FFzlVDIIYmM3FyFFxGXGjzYfA.jpg",
         },
         {
             name: "Colt Diesel Double Long Box",
@@ -33,7 +33,7 @@ async function getTruckBoxData() {
                 height: "250 cm",
                 volume: "±41 Cbm",
             },
-            image: "/images/cdd-long-box.jpg",
+            image: "https://yosualogistik.co.id/wp-content/uploads/2022/06/6.-Jasa-Sewa-Truk-CDD-Box-Muatan-Kapasitas-5-Ton.jpg",
         },
         {
             name: "Fuso Box",
@@ -43,7 +43,7 @@ async function getTruckBoxData() {
                 height: "240 cm",
                 volume: "±25 Cbm",
             },
-            image: "/images/fuso-box.jpg",
+            image: "https://asset-3.tstatic.net/jualbeli/img/2024/10/2921521/0-1759965462-MURAHbanBARU-Mitsubishi-Fuso-tronton-6x2-HD-Box-besi-2023-bok.jpg",
         },
         {
             name: "Tronton Box",
@@ -53,7 +53,7 @@ async function getTruckBoxData() {
                 height: "230 cm",
                 volume: "±31 Cbm",
             },
-            image: "/images/tronton-box.jpg",
+            image: "https://image.indonetwork.co.id/f-webp/products/thumbs/300x300/2015/10/09/078699f346da6f8fb6d80425b2ae7ce8.jpg",
         },
         {
             name: "Tronton Wingbox",
@@ -63,7 +63,7 @@ async function getTruckBoxData() {
                 height: "290 cm",
                 volume: "±65 Cbm",
             },
-            image: "/images/tronton-wingbox.jpg",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDCOqTV9u2Z7kGiG04HgG2g4xyrBLLe_xkNQ&s",
         },
     ];
 }

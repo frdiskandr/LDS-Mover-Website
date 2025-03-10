@@ -1,4 +1,5 @@
 const FleetCard = ({ name, description, image, link }) => {
+  console.log(link);
     return (
       <a href={link} className="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
         <img

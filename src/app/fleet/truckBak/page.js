@@ -13,7 +13,7 @@ async function getTruckBakTerbukaData() {
                 height: "30 cm",
                 volume: "±5 Cbm",
             },
-            image: "/images/pickup-bak.jpg",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7m5v5ZrIqq1NQRVeAqnXFMvP4OAF--fyMA&s",
         },
         {
             name: "Colt Diesel Engkel (CDE) Bak",
@@ -23,7 +23,7 @@ async function getTruckBakTerbukaData() {
                 height: "80 cm",
                 volume: "±10 Cbm",
             },
-            image: "/images/cde-bak.jpg",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8mDwzvlyMl_eUxpE56kKIyswti2dJUNSvg&s",
         },
         {
             name: "Colt Diesel Double (CDD) Bak",
@@ -33,7 +33,7 @@ async function getTruckBakTerbukaData() {
                 height: "220 cm",
                 volume: "±24 Cbm",
             },
-            image: "/images/cdd-bak.jpg",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREe6uECmP2wDEphgDESBQSlSFDkJhx3aintA&s",
         },
         {
             name: "Fuso Bak Terbuka",
@@ -43,7 +43,7 @@ async function getTruckBakTerbukaData() {
                 height: "120 cm",
                 volume: "±25 Cbm",
             },
-            image: "/images/fuso-bak.jpg",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrYUQ_zh3CDT_nRZ7bXk-bMDKlPo7_plLG5w&s",
         },
         {
             name: "Tronton Bak Terbuka",
@@ -53,7 +53,7 @@ async function getTruckBakTerbukaData() {
                 height: "230 cm",
                 volume: "±31 Cbm",
             },
-            image: "/images/tronton-bak.jpg",
+            image: "https://konsultan-mitsubishi.com/foto_berita/84COVER%20TRUK%20MITSUBISHI%20FUSO%20FIGHTER%20FN%2062%20FL%20HD%20270%20PS%206X4.jpeg",
         },
     ];
 }

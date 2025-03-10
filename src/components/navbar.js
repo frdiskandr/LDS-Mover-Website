@@ -222,29 +222,38 @@ export default function Navbar() {
                                 <ul className="w-full bg-gray-100 rounded-md">
                                     <li>
                                         <Link
-                                            href="/services/moving"
+                                            href="/services/international-moving-service"
                                             className="block px-4 py-2"
                                             onClick={() => setIsOpen(false)}
                                         >
-                                            Moving Services
+                                             International moving service
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="/services/logistics"
+                                            href="/services/domesticMove"
                                             className="block px-4 py-2"
                                             onClick={() => setIsOpen(false)}
                                         >
-                                            Logistics
+                                            Domestics moves
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="/services/storage"
+                                            href="/services/officeMoving"
                                             className="block px-4 py-2"
                                             onClick={() => setIsOpen(false)}
                                         >
-                                            Storage Solutions
+                                           Office moving
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/services/saveHandling"
+                                            className="block px-4 py-2"
+                                            onClick={() => setIsOpen(false)}
+                                        >
+                                          Safe handling
                                         </Link>
                                     </li>
                                 </ul>
@@ -269,29 +278,29 @@ export default function Navbar() {
                                 <ul className="w-full bg-gray-100 rounded-md">
                                     <li>
                                         <Link
-                                            href="/fleet/trucks"
+                                            href="/fleet/truckCooler"
                                             className="block px-4 py-2"
                                             onClick={() => setIsOpen(false)}
                                         >
-                                            Trucks
+                                          Truck Cooler/Frezer
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="/fleet/vans"
+                                            href="/fleet/truckBox"
                                             className="block px-4 py-2"
                                             onClick={() => setIsOpen(false)}
                                         >
-                                            Vans
+                                           Truck Box
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="/fleet/specialty"
+                                            href="/fleet/truckBak"
                                             className="block px-4 py-2"
                                             onClick={() => setIsOpen(false)}
                                         >
-                                            Specialty Vehicles
+                                           Truck Bak Terbuka
                                         </Link>
                                     </li>
                                 </ul>
