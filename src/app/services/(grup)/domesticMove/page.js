@@ -4,12 +4,12 @@ export default function DomesticsMoves() {
   return (
     <ServicePage
       title="Domestics Moves"
-      description="Layanan pindahan dalam negeri untuk rumah, apartemen, dan bisnis dengan profesional."
+      description= "Professional domestic moving services for homes, apartments, and businesses."
       image="/services/domesticService.jpg"
       benefits={[
-        "Tim profesional dan berpengalaman",
-        "Jangkauan luas di seluruh Indonesia",
-        "Packing dan transportasi aman",
+        "Experienced and professional team",
+        "Wide coverage across Indonesia",
+        "Secure packing and transportation"
       ]}
     />
   );

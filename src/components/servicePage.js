@@ -8,9 +8,9 @@ export default function ServicePage({ title, description, image, benefits }) {
         className="relative h-[400px] bg-cover bg-center flex items-center justify-center text-white"
         style={{ backgroundImage: `url(${image})`, backgroundSize: "cover" }}
       >
-        <div className="bg-black bg-opacity-50 p-6 rounded-lg text-center">
+        {/* <div className="bg-black bg-opacity-50 p-6 rounded-lg text-center">
           <h1 className="text-4xl font-bold">{title}</h1>
-        </div>
+        </div> */}
       </section>
 
       {/* Service Details */}

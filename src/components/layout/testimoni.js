@@ -4,27 +4,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-const testimonials = [
+const testimonials =[
     {
-        name: "John Doe",
-        company: "BCA Finance",
-        message: "Layanan LDS Movers sangat profesional dan tepat waktu!",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREeDNVdj87JBUW5lZzDnyccmqUHdAeQQIWLw&s",
+      name: "John Doe",
+      company: "BCA Finance",
+      message: "LDS Movers provides highly professional and punctual service!",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREeDNVdj87JBUW5lZzDnyccmqUHdAeQQIWLw&s"
     },
     {
-        name: "Jane Smith",
-        company: "Pertamina phe onwj ",
-        message: "Pengemasan barang sangat rapi dan aman. Highly recommended!",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRJt1-TDJX1sgF8ii0CgJ6idtIiEd9P-fPXw&s",
+      name: "Jane Smith",
+      company: "Pertamina PHE ONWJ",
+      message: "The packaging was very neat and secure. Highly recommended!",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRJt1-TDJX1sgF8ii0CgJ6idtIiEd9P-fPXw&s"
     },
     {
-        name: "Michael Brown",
-        company: "ACG SCHOOL JAKARTA",
-        message:
-            "Tim LDS Movers sangat membantu dalam proses relokasi kantor kami.",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPlC6o-rJpUv2y6c_q6JGtj7PHwm1Kcap8A&s",
-    },
-];
+      name: "Michael Brown",
+      company: "ACG School Jakarta",
+      message: "The LDS Movers team was incredibly helpful in our office relocation process.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPlC6o-rJpUv2y6c_q6JGtj7PHwm1Kcap8A&s"
+    }
+  ]
+  
 
 export default function Testimonials() {
     return (

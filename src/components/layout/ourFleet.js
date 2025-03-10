@@ -6,24 +6,25 @@ import FleetCard from "../template/fleetCard";
 
 const fleetData = [
   {
-    name: "Truck Cooler/Pendingin",
-    description: "Dilengkapi dengan sistem pendingin untuk mengangkut barang yang membutuhkan suhu stabil.",
+    name: "Refrigerated Truck",
+    description: "Equipped with a cooling system to transport goods requiring stable temperatures.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUEe0KM9lmCSnCoEwpQ1keOcEoXzayKXlozg&s",
-    link:"/fleet/truckCooler"
+    link: "/fleet/truckCooler"
   },
   {
-    name: "Truck Box",
-    description: "Kendaraan tertutup untuk pengiriman barang dengan perlindungan ekstra dari cuaca dan debu.",
+    name: "Box Truck",
+    description: "Enclosed vehicle for secure deliveries, protecting goods from weather and dust.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7cxkQjCVnkZ-SPvxJDHxlQ3aX5x0-rQAniw&s",
-    link:"/fleet/truckBox"
+    link: "/fleet/truckBox"
   },
   {
-    name: "Truk Bak Terbuka",
-    description: "Ideal untuk pengangkutan barang besar yang tidak memerlukan perlindungan dari cuaca.",
+    name: "Flatbed Truck",
+    description: "Ideal for transporting large cargo that doesn’t require weather protection.",
     image: "https://dpltranslogistics.com/wp-content/uploads/2020/09/Sewa-Gran-Max-Pick-Up-Bak.jpg",
-    link:"/fleet/truckBak"
-  },
-];
+    link: "/fleet/truckBak"
+  }
+]
+
 
 export default function OurFleet() {
   return (

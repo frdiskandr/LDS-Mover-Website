@@ -7,10 +7,10 @@ export default function CompanyProfile() {
                 {/* Gambar Perusahaan */}
                 <div className="md:w-1/2 flex justify-center">
                     <img
-            src="https://img.freepik.com/premium-photo/professional-movers-doing-home-relocation-high-quality-ai-generative_955712-1480.jpg"
-            alt="LDS Movers Indonesia"
-            className="w-full max-w-md rounded-lg shadow-lg transition-transform hover:scale-105"
-          />
+                        src="https://img.freepik.com/premium-photo/professional-movers-doing-home-relocation-high-quality-ai-generative_955712-1480.jpg"
+                        alt="LDS Movers Indonesia"
+                        className="w-full max-w-md rounded-lg shadow-lg transition-transform hover:scale-105"
+                    />
                 </div>
 
                 {/* Deskripsi Perusahaan */}
@@ -19,17 +19,17 @@ export default function CompanyProfile() {
                         LDS Movers Indonesia
                     </h2>
                     <p className="mt-4 text-gray-600 leading-relaxed">
-                        LDS Movers Indonesia adalah perusahaan logistik dan jasa
-                        relokasi yang berdedikasi untuk memberikan layanan
-                        pindahan rumah, kantor, dan pengiriman barang dengan
-                        aman, profesional, dan tepat waktu. Dengan pengalaman
-                        bertahun-tahun, kami memastikan setiap pelanggan
-                        mendapatkan solusi transportasi terbaik.
+                        LDS Movers Indonesia is a logistics and relocation
+                        services company dedicated to providing safe,
+                        professional, and timely home, office, and freight
+                        moving services. With years of experience, we ensure
+                        that every customer gets the best transportation
+                        solution.
                     </p>
                     <p className="mt-4 text-gray-600">
-                        Kami memiliki armada modern, tim profesional, dan sistem
-                        manajemen logistik yang efisien untuk menangani
-                        kebutuhan transportasi dalam dan luar negeri.
+                        We have a modern fleet, professional team, and efficient
+                        logistics management system to handle domestic and
+                        international transportation needs.
                     </p>
                     <a
                         href="/about"

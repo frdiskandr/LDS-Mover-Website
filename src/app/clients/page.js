@@ -87,14 +87,14 @@ export default async function Clients() {
             {/* Hero Section */}
             <section
                 className="relative h-[350px] bg-cover bg-center flex items-center justify-center text-white"
-                style={{ backgroundImage: "url('/images/clients-bg.jpg')" }}
+                style={{ backgroundImage: "url('/company.webp')" }}
             >
-                <div className="bg-black bg-opacity-50 p-6 rounded-lg text-center">
+                {/* <div className="bg-black bg-opacity-50 p-6 rounded-lg text-center">
                     <h1 className="text-3xl font-bold">Our Clients</h1>
                     <p className="text-lg mt-2">
                         Trusted by top companies across industries
                     </p>
-                </div>
+                </div> */}
             </section>
 
             {/* Clients List */}

@@ -126,7 +126,6 @@ export default async function Footer() {
                             {
                                 title: "Contact",
                                 links: [
-                                    {name: "Jl. Contoh No.123, Jakarta, Indonesia", link:"#"},
                                     {name: "info@ldsmovers.com", link:"mailto:info@ldsmovers.com"},
                                     {name:"+62 812-3456-7890", link:"tel:+6281234567890"},
                                 ],

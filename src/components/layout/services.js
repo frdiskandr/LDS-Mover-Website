@@ -7,26 +7,26 @@ export default function Services() {
         {
             icon: <Globe size={40} />,
             title: "International Moving Service",
-        desc: "Layanan pindahan antar negara dengan aman dan profesional.",
-            link:"/services/international-moving-service"
+            desc: "Safe and professional international relocation services.",
+            link: "/services/international-moving-service",
         },
         {
             icon: <Home size={40} />,
-            title: "Domestics Moves",
-          desc: "Jasa pindahan rumah dan apartemen dalam negeri dengan efisiensi tinggi.",
-             link:"/services/domesticMove"
+            title: "Domestic Moves",
+            desc: "Efficient and reliable home and apartment moving services within the country.",
+            link: "/services/domesticMove",
         },
         {
             icon: <Building2 size={40} />,
             title: "Office Moving",
-          desc: "Pindahan kantor yang cepat dan terorganisir untuk bisnis Anda.",
-             link:"/services/officeMoving"
+            desc: "Fast and well-organized office relocation to keep your business running smoothly.",
+            link: "/services/officeMoving",
         },
         {
             icon: <ShieldCheck size={40} />,
             title: "Safe Handling",
-          desc: "Penanganan barang dengan perlindungan ekstra untuk keamanan maksimal.",
-             link:"/services/saveHandling"
+            desc: "Extra care and protection for your valuable belongings.",
+            link: "/services/safeHandling",
         },
     ];
 
