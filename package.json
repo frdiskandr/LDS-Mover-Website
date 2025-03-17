@@ -1,7 +1,12 @@
 {
   "name": "my-app",
-  "version": "0.1.0",
+  "version": "development",
   "private": true,
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Farid Iskandar",
+    "email": "fariditb159@gmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,6 +22,7 @@
     "next": "15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "sharp": "^0.33.5",
     "swiper": "^11.2.5"
   },
   "devDependencies": {
