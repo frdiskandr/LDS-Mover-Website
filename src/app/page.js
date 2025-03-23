@@ -28,8 +28,7 @@ export default function Home() {
                                 </h1>
                                 <p className="text-lg sm:text-xl text-white">
                                     {" "}
-                                    Your trusted partner for all your moving
-                                    needs.
+                                    We Make Your Moves Easy
                                 </p>
                                 <div className="mt-8">
                                     <Link

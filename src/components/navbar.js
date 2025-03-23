@@ -105,7 +105,7 @@ export default function Navbar() {
                     </li>
 
                     {/* Dropdown Our Fleet */}
-                    <li
+                    {/* <li
                         className="relative group"
                         onMouseLeave={() =>
                             setDropdown({
@@ -157,7 +157,7 @@ export default function Navbar() {
                                 </li>
                             </ul>
                         )}
-                    </li>
+                    </li> */}
 
                     <li>
                         <Link

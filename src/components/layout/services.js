@@ -6,7 +6,7 @@ export default function Services() {
     const services = [
         {
             icon: <Globe size={40} />,
-            title: "International Moving Service",
+            title: "International Relocation",
             desc: "Safe and professional international relocation services.",
             link: "/services/international-moving-service",
         },

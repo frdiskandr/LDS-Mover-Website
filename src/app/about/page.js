@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import LogoLds from "~/components/ui/logo";
 
-// ✅ Konfigurasi SEO untuk mesin pencari (Google, Bing, dll.)
+//  Konfigurasi SEO untuk mesin pencari (Google, Bing, dll.)
 export const metadata = {
     title: "LDS Movers Indonesia | Professional Moving & Logistics Services",
     description:
@@ -70,10 +70,13 @@ export default function About() {
             {/* Hero Section */}
             <section
                 className="relative h-[350px] bg-cover bg-center flex items-center justify-center text-white"
-                style={{ backgroundImage: "url('https://thumbs.dreamstime.com/b/moving-truck-mover-service-moving-service-concept-generative-ai-moving-truck-mover-service-moving-service-concept-288963523.jpg')" }}
+                style={{
+                    backgroundImage:
+                        "url('https://thumbs.dreamstime.com/b/moving-truck-mover-service-moving-service-concept-generative-ai-moving-truck-mover-service-moving-service-concept-288963523.jpg')",
+                }}
             >
                 <div className="bg-gray-900 bg-opacity-50 p-6 rounded-lg text-center">
-            <h1 className="text-3xl font-bold flex items-center justify-center">
+                    <h1 className="text-3xl font-bold flex items-center justify-center">
                         <pre>About</pre>
                         <LogoLds />
                     </h1>
@@ -91,11 +94,39 @@ export default function About() {
                             Who We Are
                         </h2>
                         <p className="mt-4 text-gray-600">
-                            LDS Movers Indonesia is a logistics and relocation
-                            service provider with years of experience. We offer
-                            home and office moving services, as well as freight
-                            transportation, ensuring efficiency and high
-                            security.
+                            LDS Movers is a is a full-service mobility company
+                            dedicated to making moving to all around the world
+                            effortless. A company that dedicated to making a
+                            difference in the lives of its clients, team members
+                            and the community. <br /> <br />
+                            We specialized in providing our clients with
+                            complete worry-free move. Our comprehensive
+                            Relocation solution covers all aspects of the
+                            complicated moving process, simplifying the
+                            experience for our customers and guaranteeing
+                            quality We offer all move-related services from
+                            International & Domestic Moves, Office Move,
+                            Demolish and Safe handling to Vehicle Handling.
+                            Simply said, whatever move related service you need,
+                            we are here to assist. <br /> <br />
+                            WhyChoose LDSMovers? <br />
+                            <ul className="list-disc pl-6">
+                                <li>Tailor-made offering</li>
+                                <li>
+                                    We have years of experience and knowledge
+                                    that will make your move as worry-free as
+                                    possible
+                                </li>
+                                <li>
+                                    We will always offer you value for money and
+                                    always put your interests first
+                                </li>
+                                <li>Focus on client satisfaction</li>
+                                <li>We are reliable and customer-focused</li>
+                                <li>
+                                    Worldwide network for relocation partners
+                                </li>
+                            </ul>
                         </p>
                     </div>
                     <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">

@@ -1,6 +1,8 @@
 "use client";
 
-export default function ServicePage({ title, description, image, benefits }) {
+import CompanyProfile from "./companyProfile";
+
+export default function ServicePage({ title,children, image, benefits }) {
   return (
     <div>
       {/* Hero Section */}
@@ -18,13 +20,18 @@ export default function ServicePage({ title, description, image, benefits }) {
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold text-blue-600">{title}</h2>
-            <p className="mt-4 text-gray-600">{description}</p>
+            <div className="mt-4 text-gray-600">{children}</div>
 
             {/* Benefits List */}
-            <ul className="mt-6 space-y-2 text-gray-700">
+            <ul className="mt-6 space-y-4 text-gray-700">
               {benefits.map((benefit, index) => (
-                <li key={index} className="flex items-center">
-                  <span className="text-blue-500 font-bold mr-2">✓</span> {benefit}
+                <li key={index} className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-0.5 before:bg-blue-500">
+                  <div className="relative before:content-[''] before:absolute before:left-[-2rem] before:top-3 before:w-6 before:h-0.5 before:bg-blue-500">
+                    <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                      <h3 className="text-blue-500 font-bold text-lg mb-2">✓ {benefit.title}</h3>
+                      <p className="text-sm md:text-base">{benefit.description}</p>
+                    </div>
+                  </div>
                 </li>
               ))}
             </ul>
@@ -36,7 +43,8 @@ export default function ServicePage({ title, description, image, benefits }) {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-blue-600 text-white text-center py-12">
+      <CompanyProfile/>
+      {/* <section className="bg-blue-600 text-white text-center py-12">
         <h2 className="text-2xl font-bold">Need More Info?</h2>
         <p className="mt-2">Hubungi kami sekarang untuk mendapatkan layanan terbaik.</p>
         <a
@@ -45,7 +53,7 @@ export default function ServicePage({ title, description, image, benefits }) {
         >
           Contact Us
         </a>
-      </section>
+      </section> */}
     </div>
   );
 }

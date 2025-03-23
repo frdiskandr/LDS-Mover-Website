@@ -4,13 +4,14 @@ export default function SafeHandling() {
     return (
         <ServicePage
             title="Safe Handling"
-            description="We handle your belongings with extra care to ensure maximum safety."
-            image="/services/save-handling.jpg"
+            image="/services/safeHandling.jpg"
             benefits={[
-                "High-quality packing materials",
-                "Trained team for handling valuable items",
-                "Insurance available for extra protection",
+                { title: "High-quality packing materials" },
+                { title: "Trained team for handling valuable items" },
+                { title: "Insurance available for extra protection" },
             ]}
-        />
+        >
+            We handle your belongings with extra care to ensure maximum safety.
+        </ServicePage>
     );
 }
