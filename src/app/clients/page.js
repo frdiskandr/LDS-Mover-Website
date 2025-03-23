@@ -108,13 +108,13 @@ export default async function Clients() {
                             key={index}
                             className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
                         >
-                            <Image
+                            {/* <Image
                                 src={client.logo}
                                 alt={client.name}
                                 width={150}
                                 height={100}
                                 className="mb-4"
-                            />
+                            /> */}
                             <h3 className="text-lg font-semibold text-gray-700">
                                 {client.name}
                             </h3>
