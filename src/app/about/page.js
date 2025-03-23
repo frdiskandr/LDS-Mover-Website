@@ -110,7 +110,7 @@ export default function About() {
                             Simply said, whatever move related service you need,
                             we are here to assist. <br /> <br />
                             WhyChoose LDSMovers? <br />
-                            <ul className="list-disc pl-6">
+                            <ul className="list-disc pl-6 text-start ">
                                 <li>Tailor-made offering</li>
                                 <li>
                                     We have years of experience and knowledge
