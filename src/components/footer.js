@@ -127,7 +127,7 @@ export default async function Footer() {
                                 title: "Contact",
                                 links: [
                                     {name: "info@ldsmovers.com", link:"mailto:info@ldsmovers.com"},
-                                    { name: "+62 812-3456-7890", link: "tel:+6281234567890" },
+                                    { name: "+62 812-8298-4242", link: "tel:+6281282984242" },
                                     {name: "+62 896-3788-8298", link:"https://wa.me/+6289637888298"},
                                 ],
                             },
