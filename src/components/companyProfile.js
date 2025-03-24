@@ -7,9 +7,9 @@ export default function CompanyProfile() {
                 {/* Gambar Perusahaan */}
                 <div className="md:w-1/2 flex justify-center">
                     <img
-                        src="https://img.freepik.com/premium-photo/professional-movers-doing-home-relocation-high-quality-ai-generative_955712-1480.jpg"
+                        src="/images/cp.jpg"
                         alt="LDS Movers Indonesia"
-                        className="w-full max-w-md rounded-lg shadow-lg transition-transform hover:scale-105"
+                        className=" max-w-md rounded-lg shadow-lg transition-transform hover:scale-105"
                     />
                 </div>
 
